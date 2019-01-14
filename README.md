@@ -10,14 +10,14 @@ Im Programm werden die **Spalten**, die **Zeilen** und die **Größe der Nasen**
 
 ----------
 
-<img width = "80%" src="IMG/InkscapePuzzleGenerator2.jpg" />
+<img width = "80%" src="IMG/InkscapePuzzleGenerator_2.jpg" />
 
 Im **XML Editor von Inkscape** kann man schön den Aufbau der SVG erkennen.
 
 
 ----------
 
-<img width = "80%" src="IMG/InkscapePuzzleGenerator1.jpg" />
+<img width = "80%" src="IMG/InkscapePuzzleGenerator_1.jpg" />
 
 ----------
 
