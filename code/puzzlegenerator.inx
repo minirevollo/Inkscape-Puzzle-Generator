@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <!-- _name must have same name as .py file but capitalise it. Shows on Menu this way-->
+  <_name>Puzzlegenerator</_name>
+  <!-- id should be unique. Associates entered values with this menu -->
+  <id>githubacct.uniqueid.Puzzlegenerator</id>
+  <!-- mention a dependency here and will check for existence (optional)-->
+  <dependency type="executable" location="extensions">puzzlegenerator.py</dependency>
+  <dependency type="executable" location="extensions">simplestyle.py</dependency>
+  <!-- start notebook -->
+  <param name="active-tab" type="notebook">
+    <!-- one per page(tab) - unique names. Can discover which page in program-->
+    <page name="einstellungen" _gui-text="Einstellungen">
+      <param name="spalten" type="int" min="3" max="1200" _gui-text="Anzahl der Spalten">16</param>
+      <param name="zeilen" type="int" min="3" max="1000" _gui-text="Anzahl der Zeilen">12</param>
+      <param name="groesse" type="int" min="1" max="10" _gui-text="Groesse der Nasen">2</param>
+    </page>
+    <!-- next tab -->
+    <page name="hilfe" _gui-text="Hilfe">
+      <_param name="use2" type="description" xml:space="preserve">Das Seitenverhältnis 12 zu 9 Teilen bietet sich für DinA4 an.
+
+
+
+
+
+
+
+
+
+			</_param>
+    </page>
+  </param>
+  <!-- classify which menu it appears under - can be new name -->
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="erfindergarden" />
+      <!-- which menu under Extensions -->
+    </effects-menu>
+  </effect>
+  <!-- py file again -->
+  <script>
+    <command reldir="extensions" interpreter="python">puzzlegenerator.py</command>
+  </script>
+</inkscape-extension>
